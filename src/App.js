@@ -10,14 +10,12 @@ function App() {
   return (
     <div className="App">
       <nav className="navigation">
-        <div className="navigation-sub">
           <img src={logo} className="logo-image" alt="Logo" />
           <ul>
             <li><Link to="/" className="item">Projects</Link></li>
             <li><Link to="articles" className="item">Articles</Link></li>
             <li><Link to="about" className="item">About</Link></li>
           </ul>
-        </div>
       </nav>
       <Routes>
         <Route path="/" element={<Projects />} />
