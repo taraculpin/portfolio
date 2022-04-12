@@ -9,21 +9,21 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <nav className="navigation">
+        <div className="navigation-sub">
+          <img src={logo} className="logo-image" alt="Logo" />
+          <ul>
+            <li><Link to="/" className="item">Projects</Link></li>
+            <li><Link to="articles" className="item">Articles</Link></li>
+            <li><Link to="about" className="item">About</Link></li>
+          </ul>
+        </div>
+      </nav>
       <Routes>
         <Route path="/" element={<Projects />} />
         <Route path="articles" element={<Articles />} />
         <Route path="about" element={<About />} />
       </Routes>
-      <div className="navigation">
-        <img src={logo} className="logo-image" alt="Logo" />
-        <div className="navigation-sub">
-          {/* Links */}
-
-          <Link to="/" className="item">Projects</Link>
-          <Link to="articles" className="item">Articles</Link>
-          <Link to="about" className="item">About</Link>
-        </div>
-      </div>
     </div>
   );
 }

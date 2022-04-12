@@ -1,7 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
 .logo-image {
   height: 40px;
+}
+.navigation-sub {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+  position: sticky;
+}
+nav ul li {
+  display: inline;
 }
