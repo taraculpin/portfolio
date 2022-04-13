@@ -11,31 +11,33 @@ import Whacamolepage from '../projects/whacamole'
 
 function Projects(props) {
   return (
-    <div>
+    <div className="projects">
       <h1>Projects</h1>
-      <Thumbnail
-        link="cryptaul"
-        image={cryptaul}
-        title="Cryptaul"
-        category="Ruby on Rails Web App"
-      />
-      <Thumbnail
-        link="bedandbones"
-        image={bedandbones}
-        title="Bed & Bones"
-        category="Ruby on Rails Web App"
-      />
-      <Thumbnail
-        link="whacamole"
-        image={whacamole}
-        title="Whac-a-mole"
-        category="React game"
-      />
-      <Routes>
-        <Route path="cryptaul" element={<Cryptaulpage />} />
-        <Route path="bedandbones" element={<Bedandbonespage />} />
-        <Route path="whacamole" element={<Whacamolepage />} />
-      </Routes>
+        <div className="project-grid">
+        <Thumbnail
+          link="cryptaul"
+          image={cryptaul}
+          title="Cryptaul"
+          category="Ruby on Rails Web App"
+        />
+        <Thumbnail
+          link="bedandbones"
+          image={bedandbones}
+          title="Bed & Bones"
+          category="Ruby on Rails Web App"
+        />
+        <Thumbnail
+          link="whacamole"
+          image={whacamole}
+          title="Whac-a-mole"
+          category="React game"
+        />
+        <Routes>
+          <Route path="cryptaul" element={<Cryptaulpage />} />
+          <Route path="bedandbones" element={<Bedandbonespage />} />
+          <Route path="whacamole" element={<Whacamolepage />} />
+        </Routes>
+        </div>
     </div>
   )
 }
