@@ -50,7 +50,7 @@ nav img {
   transition: 0.3s;
   border-radius: 10px;
   min-width: 400px;
-  height: 500px;
+  height: 400px;
   background-image: contain;
   flex-grow: 2;
 }
