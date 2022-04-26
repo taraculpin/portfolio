@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <nav className="navigation">
-        <Link to="/" className="item">
+        <Link to="/" className="logo-image">
           <img src={logo} className="logo-image" alt="Logo" />
           </Link>
           <ul>
